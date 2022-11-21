@@ -1,5 +1,13 @@
 import refatImg from "/src/assets/refat.jpg";
 import "./Info.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faLinkedin,
+  faGithub,
+  faDiscord,
+  // faenvelope,
+} from "@fortawesome/free-brands-svg-icons";
 
 function email() {
   console.log("clicked");
@@ -15,11 +23,14 @@ export default function Info() {
       <h1>Refat Alam</h1>
       <h2>Frontend Developer</h2>
       <a href="https://google.com" target="_blank">
-        <button id="email-btn">Email</button>
+        <button id="email-btn">
+          <FontAwesomeIcon icon={faLinkedin} />
+          Email
+        </button>
       </a>
-      <a href="https://linkedin.com" target={"_blank"}>
+      <a href="https://www.linkedin.com/in/m-refat-alam/" target={"_blank"}>
         <button id="linkedin-btn" onClick={linkedIn}>
-          LinkedIn
+          <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
         </button>
       </a>
     </div>
