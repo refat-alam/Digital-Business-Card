@@ -1,0 +1,13 @@
+.Footer {
+  display: flex;
+  align-items: center;
+  width: 317px;
+  height: 64px;
+  background: #161619;
+  border-radius: 0px 0px 10px 10px;
+  justify-content: space-evenly;
+}
+.Footer > a {
+  font-size: 2rem;
+  color: #918e9b;
+}
