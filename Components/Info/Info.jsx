@@ -6,8 +6,10 @@ import {
   faLinkedin,
   faGithub,
   faDiscord,
-  // faenvelope,
 } from "@fortawesome/free-brands-svg-icons";
+import {
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
 function email() {
   console.log("clicked");
@@ -23,9 +25,8 @@ export default function Info() {
       <h1>Refat Alam</h1>
       <h2>Frontend Developer</h2>
       <a href="https://google.com" target="_blank">
-        <button id="email-btn">
-          <FontAwesomeIcon icon={faLinkedin} />
-          Email
+        <button id="email-btn" onClick={email}>
+        <FontAwesomeIcon icon={faEnvelope}/> Email
         </button>
       </a>
       <a href="https://www.linkedin.com/in/m-refat-alam/" target={"_blank"}>
